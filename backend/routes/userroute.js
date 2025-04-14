@@ -1,0 +1,10 @@
+const express = require("express");
+const router   = express.Router();
+const {register , login} = require("../controllers/usercontroller");
+
+router.route("/login").post(login);
+router.route("/register").post(register);
+router.route("/add_to_activity");
+router.route("/get_all_activity");
+
+module.exports = router;
